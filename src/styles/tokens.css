@@ -1,0 +1,42 @@
+:root {
+  --plaster: #e8d9ce;
+  --copper: #b85a3a;
+  --copper-deep: #8f3f28;
+  --ink: #2a221f;
+  --ink-soft: #5a4d47;
+  --soft: #f7f4f1;
+  --cyan-bead: #2eb8c4;
+  --hair-shadow: #1a1412;
+  --line: color-mix(in srgb, var(--ink) 14%, transparent);
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Sora', system-ui, sans-serif;
+
+  --space-xs: 0.5rem;
+  --space-sm: 0.85rem;
+  --space-md: 1.35rem;
+  --space-lg: 2.25rem;
+  --space-xl: 4rem;
+  --space-2xl: 6.5rem;
+
+  --radius-sm: 0.35rem;
+  --radius-md: 0.65rem;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --header-h: 4.25rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ease-out: linear;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
