@@ -4,13 +4,22 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-brand">
-        <img
-          className="footer-logo"
-          src={asset('images/logo.jpg')}
-          alt="Karasiova_hair — Пространство красоты"
-          width={280}
-          height={112}
-        />
+        <div className="footer-brand-row">
+          <img
+            className="footer-mark"
+            src={asset('images/logo-mark.jpg')}
+            alt=""
+            width={56}
+            height={56}
+          />
+          <img
+            className="footer-logo"
+            src={asset('images/logo.jpg')}
+            alt="Karasiova_hair — Пространство красоты"
+            width={280}
+            height={112}
+          />
+        </div>
         <p>Надежда Карасёва · парикмахер-модельер</p>
       </div>
       <div className="footer-meta">

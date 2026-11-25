@@ -82,19 +82,35 @@ ol {
 .brand-lockup {
   display: inline-flex;
   align-items: center;
+  gap: 0.55rem;
   text-decoration: none;
   min-width: 0;
   flex-shrink: 1;
 }
 
-.brand-logo {
+.brand-mark {
   display: block;
+  width: 2.55rem;
+  height: 2.55rem;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.brand-logo {
+  display: none;
   height: 2.55rem;
   width: auto;
-  max-width: min(14rem, 46vw);
+  max-width: min(13rem, 42vw);
   object-fit: contain;
   object-position: left center;
   border-radius: var(--radius-sm);
+}
+
+@media (min-width: 720px) {
+  .brand-logo {
+    display: block;
+  }
 }
 
 .site-nav {
@@ -654,11 +670,25 @@ ol {
   font-size: 0.92rem;
 }
 
+.footer-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-mark {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
 .footer-logo {
   display: block;
   width: min(14rem, 70%);
   height: auto;
-  margin-bottom: 0.75rem;
   border-radius: var(--radius-sm);
 }
 

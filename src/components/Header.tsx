@@ -13,6 +13,13 @@ export function Header() {
     <header className="site-header">
       <a className="brand-lockup" href="#top" aria-label="Пространство красоты — наверх">
         <img
+          className="brand-mark"
+          src={asset('images/logo-mark.jpg')}
+          alt=""
+          width={64}
+          height={64}
+        />
+        <img
           className="brand-logo"
           src={asset('images/logo.jpg')}
           alt="Karasiova_hair — Пространство красоты"
